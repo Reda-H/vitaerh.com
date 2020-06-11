@@ -1,0 +1,146 @@
+{
+  "person": [
+    {
+      "id": 0,
+      "firstName": "Reda",
+      "lastName": "Herradi",
+      "birthYear": 1997,
+      "link": "Reda-H",
+      "bio": "Business Expert."
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "title": "Agenda in Javascript",
+      "desc": "An agenda with an input to add tasks, and buttons to delete those tasks, a very simple project started with the idea to learn the basics of Javascript.",
+      "link": "https://github.com/Reda-H/Agenda_Js",
+      "tags": [
+        "js",
+        "html",
+        "css"
+      ],
+      "picture": "agenda_js.png"
+    },
+    {
+      "id": 1,
+      "title": "Website Skeleton in ReactJs",
+      "desc": "Skeleton of a website started with create-react, a project started to learn React.Js",
+      "link": "https://github.com/Reda-H/Website_Skeleton",
+      "tags": [
+        "react",
+        "js",
+        "html",
+        "css"
+      ],
+      "picture": ""
+    },
+    {
+      "id": 2,
+      "title": "GINI Index Calculator in Python",
+      "desc": "A GINI Index Calculator created in Python, using the numpy package. The goal of this project was to apply my Data Mining class material and possibly create a usable package in long run.",
+      "link": "https://github.com/Reda-H/Agenda_Js",
+      "tags": [
+        "py"
+      ],
+      "picture": ""
+    },
+    {
+      "id": 3,
+      "title": "REAC Organization",
+      "desc": "Volunteering experience during which I developed a web application for the organization that I volunteered at as a Web tutor for the marginalized commmunity of my hometown. We were able to create a simple JS web application that shows the façade of REAC.",
+      "link": "https://gitlab.com/THamza/reacwebsite",
+      "tags": [
+        "js",
+        "html",
+        "css",
+        "bs"
+      ],
+      "picture": ""
+    },
+    {
+      "id": 4,
+      "title": "Authentication System with Symfony4",
+      "desc": "A simple login page created to learn how to use PHP's framework: Symfony4.",
+      "link": "https://gitlab.com/Flawles/symfony-4-authentication-sys",
+      "tags": [
+        "sy",
+        "php",
+        "html",
+        "css"
+      ],
+      "picture": ""
+    },
+    {
+      "id": 5,
+      "title": "Styled Login Form",
+      "desc": "A simple login page created to try myself at styling using CSS only",
+      "link": "https://github.com/Reda-H/Style_Login_Form",
+      "tags": [
+        "html",
+        "css"
+      ],
+      "picture": "styled_login.png"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "UX Designer Intern at Caciopee",
+      "desc": "An internship in which I have worked as a User Experience Designer in a fast, growing startup. My job was to test the system in many aspects, such as Perspicuity, Usability, Attractiveness etc... and find solutions to areas that lack in efficiency. I have learned to work with design tools such as Adobe XD, to communicate on a constant basis with the engineers in the company to create and make good use of surveys.",
+      "link": "https://caciopee.com",
+      "tags": [
+        ""
+      ],
+      "picture": "",
+      "dates": "May 2019 - August 2019"
+    },
+    {
+      "id": 2,
+      "title": "Intern at ALM Solutions",
+      "desc": "An internship during the end of 2014 to January 2015, in which I was able to pick up skills in web development, mainly in PHP/MySQL, on which I am heavily interested in.",
+      "link": "",
+      "tags": [
+        "PHP",
+        "html",
+        "css"
+      ],
+      "picture": "",
+      "dates": "Mid 2015 - End 2015"
+    },
+    {
+      "id": 3,
+      "title": "Head of Department in the MedSharan International Tournament",
+      "desc": "Complete organisation of an international sports tournament, my team and I had to take care of all the work related to the tournament, more precisely I was taking care of the communication systems and external/internal communication during the tournament, a work that includes creating a simple system on Android to send messages between the different departments, and communicating with the sponsors and the incoming teams and univerities.",
+      "link": "http://www.aui.ma/en/media-room/news/al-akhawayn-news/3366-aui-hosts-third-edition-of-the-med-saharan-sports-challenge.html",
+      "tags": [
+        "aui",
+        "communication"
+      ],
+      "picture": "",
+      "dates": "September 2017 - May 2018"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "title": "Bachelor in Computer Science at Al Akhawayn University",
+      "desc": "I am currently going through a Computer Science major at Al Akhawayn University in Ifrane (AUI), and minoring in Business and Administration. I concentrated my studies in Data Mining, Competitive Programming, Cryptography and worked during my personal time on my Web Development skills.",
+      "link": "http://www.aui.ma/en/sse/undergraduates/bscsc.html",
+      "tags": [
+        ""
+      ],
+      "picture": ""
+    },
+    {
+      "id": 2,
+      "title": "Bachelor in Computer Science at Al Akhawayn University",
+      "desc": "I am currently going through a Computer Science major at Al Akhawayn University in Ifrane (AUI), and minoring in Business and Administration. I concentrated my studies in Data Mining, Competitive Programming, Cryptography and worked during my personal time on my Web Development skills.",
+      "link": "http://www.aui.ma/en/sse/undergraduates/bscsc.html",
+      "tags": [
+        ""
+      ],
+      "picture": ""
+    }
+  ]
+}

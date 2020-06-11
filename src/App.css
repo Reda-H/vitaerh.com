@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.timeVariables {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.header-hi {
+  font-family: 'Merriweather', serif;
+  margin-top: 10%;
+}
+
+.header {
+  text-align: center;
+}
+
+.custom-btn-toolbar {
+  display: inline !important;
+}
+
+.custom-btn-toolbar > .btn {
+  margin-right: 1rem;
+}
