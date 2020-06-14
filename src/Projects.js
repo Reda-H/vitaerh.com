@@ -41,6 +41,14 @@ const projects = items.projects;
     let appearAnimation = "flip-left"
     // Math.floor(Math.random() * 10)
 
+    let headerSection = {
+        textAlign: 'center',
+        borderBottom: 'grey 2px solid',
+        borderRadius: '1px',
+        marginBottom: '1rem',
+        // padding: '1em',
+    }
+
 class Projects extends React.Component{
     componentDidMount(){
         AOS.init();
@@ -51,50 +59,54 @@ class Projects extends React.Component{
         else
             appearAnimation = "flip-left";
         return(
-            <CardColumns style={root}>
-                {projects.map( item => {
-                    return (
-                        <Card style={cardStyles} key={item.id} data-aos={appearAnimation} data-aos-duration={(Math.floor(Math.random()*2)+1) * 1000} data-aos-easing="ease-in-sine">
-                            <CardActionArea>
-                                <Container style={pictureSizing}>
-                                    <Image src={project} fluid/>
-                                </Container>
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        {item.title}
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p" align="justify">
-                                        {item.desc}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                        <Button size="small" color="primary" href={item.link}>
-                                            Github
-                                        </Button>
-                                        {item.tags.map( tag => {
-                                            return(
-                                                <div size="small" color="primary">
-                                                    <Image src={
-                                                        tag === 'js' ? js : 
-                                                        tag === 'py' ? py :
-                                                        tag === 'bs' ? bs :
-                                                        tag === 'php' ? php :
-                                                        tag === 'laravel' ? laravel :
-                                                        tag === 'css' ? css :
-                                                        tag === 'html' ? html :
-                                                        tag === 'react' ? react :
-                                                        tag === 'sy' ? sy :
-                                                        null
-                                                    }/>
-                                                </div>
-                                            )
-                                        })}    
-                                </CardActions>
-                            </CardActionArea>
-                        </Card>
-                    );
-                })}
-            </CardColumns>
+            <div>
+                <Typography class="display-4" style={headerSection}>My Projects</Typography>
+
+                <CardColumns style={root}>
+                    {projects.map( (item, index) => {
+                        return (
+                            <Card style={cardStyles} key={item.id} data-aos={appearAnimation} data-aos-duration={(1500 + 1000*index).toString()} data-aos-easing="ease-in-sine">
+                                <CardActionArea>
+                                    <Container style={pictureSizing}>
+                                        <Image src={project} fluid/>
+                                    </Container>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2">
+                                            {item.title}
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" component="p" align="justify">
+                                            {item.desc}
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                            <Button size="small" color="primary" href={item.link}>
+                                                Github
+                                            </Button>
+                                            {item.tags.map( tag => {
+                                                return(
+                                                    <div size="small" color="primary">
+                                                        <Image src={
+                                                            tag === 'js' ? js : 
+                                                            tag === 'py' ? py :
+                                                            tag === 'bs' ? bs :
+                                                            tag === 'php' ? php :
+                                                            tag === 'laravel' ? laravel :
+                                                            tag === 'css' ? css :
+                                                            tag === 'html' ? html :
+                                                            tag === 'react' ? react :
+                                                            tag === 'sy' ? sy :
+                                                            null
+                                                        }/>
+                                                    </div>
+                                                )
+                                            })}    
+                                    </CardActions>
+                                </CardActionArea>
+                            </Card>
+                        );
+                    })}
+                </CardColumns>
+            </div>
         );
     }
 }

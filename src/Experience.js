@@ -31,6 +31,13 @@ const pictureSizing = {
     overflow: 'hidden',
 }
 let fadeAnimation = "";
+let headerSection = {
+    textAlign: 'center',
+    borderBottom: 'grey 2px solid',
+    borderRadius: '1px',
+    marginBottom: '1rem',
+    // padding: '1em',
+}
 
 const experiences = items.experience;
 
@@ -41,6 +48,8 @@ class Experience extends React.Component {
     render(){
         return(
             <Container>
+                <Typography class="display-4" style={headerSection}>My Experience</Typography>
+
                 {experiences.map((item, index) => {
                     if(index === experiences.length - 1)
                         rootStyles = lastRootStyles;
@@ -50,7 +59,7 @@ class Experience extends React.Component {
                         fadeAnimation = "fade-left"
                     
                     return(
-                        <Card data-aos={fadeAnimation} data-aos-duration={"2500"} style={rootStyles} key={item.id}>
+                        <Card data-aos={fadeAnimation} data-aos-duration={"1500"} style={rootStyles} key={item.id}>
                             <Row>
                                 <Col xs={6} md={4} style={pictureSizing}>
                                     <Image src={plant} fluid/>

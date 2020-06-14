@@ -70,13 +70,8 @@ class App extends React.Component {
             </Container>
           </Jumbotron>
           <Jumbotron style={JumbotronStylesSecondary}>
-              <Container style={InnerContainerStyles} data-aos={"fade-up"} data-aos-duration={"3000"}>
-                <Home />
-              </Container>
-          </Jumbotron>
-          <Jumbotron style={JumbotronStylesSecondary}>
-            <Container style={InnerContainerStyles}>
-              <Projects />
+            <Container style={InnerContainerStyles} data-aos={"fade-up"} data-aos-duration={"3000"}>
+              <Home />
             </Container>
           </Jumbotron>
           <Jumbotron style={JumbotronStylesSecondary}>
@@ -84,6 +79,11 @@ class App extends React.Component {
               <Experience />            
             </Container>
           </Jumbotron>
+          <Jumbotron style={JumbotronStylesSecondary}>
+            <Container style={InnerContainerStyles}>
+              <Projects />
+            </Container>
+          </Jumbotron>  
         </div>
     );
   }
